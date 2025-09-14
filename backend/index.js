@@ -29,11 +29,11 @@ app.use(cors());
 const server = http.createServer(app);
 initSocket(server); // Truyền server HTTP vào
 
-app.get("", (req, res) => {
-  res.send({
-    message: "Connected!",
-  });
-});
+// app.get("", (req, res) => {
+//   res.send({
+//     message: "Connected!",
+//   });
+// });
 
 app.use("/api", RootRouter);
 
@@ -50,3 +50,4 @@ const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
