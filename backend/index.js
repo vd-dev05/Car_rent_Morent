@@ -6,6 +6,8 @@ import dotenv from "dotenv";
 import "./cron-jobs/cron.js"; //import để chạy cron
 import { initSocket } from "./socket/socket.js";
 import http from "http";
+import path from 'path';
+
 dotenv.config();
 //
 import RootRouter from "./routes/index.js";
@@ -53,3 +55,4 @@ const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
