@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build" : "cd frontend && npm install && npm run build && cd ..",
+    "build" : "cd frontend && npm ci --include=dev && npm run build && ls -la",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start" : "cd backend && npm install && npm start"
   },
