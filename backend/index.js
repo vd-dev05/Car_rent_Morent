@@ -1,4 +1,3 @@
-// mongodb+srv://TrungLe2003:Trungcrazy2003@carsellingweb.amr1k.mongodb.net/
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -7,6 +6,13 @@ import "./cron-jobs/cron.js"; //import để chạy cron
 import { initSocket } from "./socket/socket.js";
 import http from "http";
 import path from 'path';
+
+// Solution for __dirname in ESM
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 dotenv.config();
 //
@@ -18,15 +24,6 @@ await mongoose.connect(process.env.MONGO_URL).then(() => {
 
 const app = express();
 app.use(express.json());
-// const corsOptions = {
-//   origin: "http://localhost:5173",
-//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-// };
-// const corsOptions = {
-//   origin: ["https://fe-spck4.onrender.com", "http://localhost:5173"],
-//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-// };
-// app.use(cors(corsOptions));
 app.use(cors());
 
 const server = http.createServer(app);
@@ -40,19 +37,16 @@ app.get("", (req, res) => {
 
 app.use("/api", RootRouter);
 
-// server.listen(process.env.PORT || 8080, () => {
-//   console.log("This is Car Selling Project");
-// });
+// Fix: __dirname is now defined above for ESM
 if (process.env.NODE_ENV === "production") {
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
+  app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
-app.get('*', (req, res) => {
+  app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
-});  
+  });  
 }
 
 const PORT = process.env.PORT || 8080; 
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
