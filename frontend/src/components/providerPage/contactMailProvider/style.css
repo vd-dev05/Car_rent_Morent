@@ -1,0 +1,211 @@
+.ContactMailManage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.ContactMailManage .line {
+  border: 1px solid rgb(228, 228, 228);
+  color: rgb(236, 82, 82);
+}
+/* container1 */
+.ContactMailManage .container1 {
+  height: 40%;
+  width: 60%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  gap: 8px;
+}
+
+.ContactMailManage .container1 .mailFrame {
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 1%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* container2 */
+.ContactMailManage .container2 {
+  height: 40%;
+  width: 35%;
+  padding: 2%;
+}
+
+.ContactMailManage .line2 {
+  border: 1px solid rgb(191, 191, 228);
+}
+
+.ContactMailManage .container2 .mailContent {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  gap: 8px;
+}
+
+.ContactMailManage .container2 .mailContent .senderName {
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.ContactMailManage .container2 .mailContent .row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ContactMailManage .container2 .mailContent .row label {
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  opacity: 0.5;
+}
+
+.ContactMailManage .container2 .mailContent .frameContent .nameContent {
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 5%;
+  text-align: center;
+  color: rgb(103, 70, 248);
+}
+
+.ContactMailManage .container2 .mailContent .frameContent .content {
+  word-wrap: break-word;
+  margin-top: 3%;
+}
+
+/* checkbox */
+.decisionBox {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.decisionBox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.decisionBox input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.decisionBox input:checked {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.decisionBox input:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  line-height: 18px;
+}
+
+.decisionBox label:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Style cho input lý do từ chối */
+.reasonBox {
+  margin-top: 10px;
+}
+
+.reasonBox label {
+  font-weight: bold;
+}
+
+.reasonBox textarea {
+  width: 100%;
+  height: 150px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  resize: none;
+}
+
+.reasonBox textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.ContactMailManage .container2 .mailContent button {
+  height: 30px;
+  border-radius: 10px;
+  background-color: inherit;
+  transition: 0.7s;
+  margin-top: 10px;
+}
+
+.ContactMailManage .container2 .mailContent button:hover {
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.ContactMailManage .container2 .notSelectMail {
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+  align-items: center;
+}
+
+.ContactMailManage .container2 .notSelectMail .warningText {
+  opacity: 0.6;
+}
+.noneMail {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.noneMail p {
+  font-size: 35px;
+}
+.noneMail img {
+  width: 250px;
+  height: 250px;
+}
+
+/* pagination */
+.ContactMailManage .pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+  gap: 10px;
+}
+
+.ContactMailManage .pagination button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  padding: 5px;
+}

@@ -1,0 +1,127 @@
+.newsByCategory {
+    background-color: white;
+    padding: 25px 200px;
+}
+
+.newsByCategory .news {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.newsByCategory .news .leftNews {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.newsByCategory .news .leftNews img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+
+.newsByCategory .news .leftNews .iconSearch100px {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+}
+
+.newsByCategory .news .leftNews:hover img {
+    opacity: 0.5;
+}
+
+.newsByCategory .news .leftNews:hover .iconSearch100px {
+    opacity: 1;
+}
+
+.newsByCategory .news .rightNews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsByCategory .news .rightNews > h4 {
+    cursor: auto;
+}
+
+.newsByCategory .news .rightNews .row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.newsByCategory .news .rightNews .row h5 {
+    color: #EC7723;
+}
+
+.newsByCategory .news .rightNews .row > p {
+    color: #888888;
+}
+
+.newsByCategory .news .rightNews .subTitle {
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.newsByCategory .news .rightNews .groupReadMore {
+    height: 44px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: end;
+}
+
+.newsByCategory .news .rightNews .groupReadMore .readMore {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    border-left: 1px solid #EEEEEE;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.newsByCategory .news .rightNews .groupReadMore .readMore .iconBook {
+    position: relative;
+    bottom: 1px;
+}
+
+.newsByCategory .news .rightNews .groupReadMore .readMore .iconBook path {
+    transition: 0.5s ease;
+}
+
+.newsByCategory .news .rightNews .groupReadMore .readMore:hover {
+    background-color: #3563E9;
+    color: #FFFFFF;
+}
+
+.newsByCategory .news .rightNews .groupReadMore .readMore:hover .iconBook path{
+    fill: #FFFFFF;
+}
+
+.newsByCategory .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.newsByCategory .pagination button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+.footer {
+    color: #FFFFFF;
+}
+
+.footer .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #333333;
+}
+
+.footer .top img {
+    width: 150px;
+}
+
+.footer .top p {
+    margin-top: 15px;
+}
+
+.footer .top .community {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.footer .top .community .item {
+    width: 32px;
+    height: 32px;
+}
+
+.footer .top .community .item svg:hover {
+    cursor: pointer;
+}
+
+.footer .top .community .telegram svg:hover {
+    fill: #37aee2;
+}
+
+.footer .top .community .discord svg:hover {
+    fill: #5865f2;
+}
+
+.footer .top .community .twitter svg:hover {
+    fill: #00aaec;
+}
+
+.footer .top .community .facebook svg:hover {
+    fill: #1877f2;
+}
+
+.footer .top .community .linkedIn svg:hover {
+    fill: #0077B5;
+}
+
+.footer .top .community .reddit svg:hover {
+    fill: #ff4400;
+}
+
+.footer .top .community .instagram svg:hover {
+    fill: #df5a70;
+}
+
+.footer .top .community .youtube svg:hover {
+    fill: #cd201f;
+}
+
+.footer .bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+}

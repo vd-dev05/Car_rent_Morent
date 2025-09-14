@@ -1,0 +1,104 @@
+.container {
+background-color: white;
+position: relative;
+}
+
+.link {
+color: black ;
+text-decoration: none;
+}
+
+.navLink {
+color: black ;
+text-decoration: none;
+}
+
+h1 {
+font-size: 40px;
+}
+
+h2 {
+font-size: 30px;
+}
+
+h3 {
+font-size: 24px;
+}
+
+h4 {
+font-size: 18px;
+}
+
+h5 {
+font-size: 14px;
+}
+
+p {
+font-size: 14px;
+}
+
+::-webkit-scrollbar {
+width: 5px;
+background-color: #80808080;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #808080;
+border-radius: 5px;
+}
+
+.container:has(.homePage, .registerPage, .loginPage) .header {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+border-bottom: none;
+color: #FFFFFF;
+background-color: #00000080;
+/* backdrop-filter: blur(25px); */
+}
+
+.container:has(.homePage, .registerPage, .loginPage) .header .partition {
+background-color: #FFFFFF;
+}
+
+.container:has(.homePage, .registerPage, .loginPage) .header .logoWhite {
+display: block;
+}
+
+.container:has(.homePage, .registerPage, .loginPage) .header .logoBlack {
+display: none;
+}
+
+.container:has(.notFoundPage) .header,
+.container:has(.notFoundPage) .footer {
+display: none;
+}
+
+.container:has(.grRedirect) .header {
+height: 92px;
+}
+
+.container:has(.grRedirect) .grRedirect h5 {
+color: #FFFFFF;
+}
+
+.container:has(.adminPage) .gr {
+display: none;
+}
+
+.container:has(.adminPage) .header {
+height: 34px;
+}
+
+.container:has(.adminPage) .redirectToAdminPage {
+display: none;
+}
+
+.container:has(.adminPage) .redirectToTheWebsite {
+display: flex;
+}
+
+.container:has(.adminPage) .footer {
+display: none;
+}

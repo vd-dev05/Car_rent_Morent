@@ -1,0 +1,194 @@
+.MailPage {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  padding: 2%;
+}
+
+.MailPage div {
+  font-size: 0.9rem;
+}
+
+.MailPage .listMail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.MailPage .listMail .mailFrame {
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.MailPage .listMail .mailFrame label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.4;
+}
+/*  */
+.MailPage .listMail .mailFrame .section1 {
+  width: 30%;
+}
+/* section2 */
+.MailPage .listMail .mailFrame .section2 {
+  width: 40%;
+  gap: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.MailPage .listMail .mailFrame .section2 .status {
+  text-wrap: nowrap;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.MailPage .listMail .mailFrame .section2 .toReason {
+  border-bottom: 1px solid black;
+  transition: 0.3s;
+}
+
+.MailPage .listMail .mailFrame .section2 .toReason:hover {
+  border-bottom: 1px solid rgb(255, 109, 109);
+  color: rgb(255, 109, 109);
+}
+
+.MailPage .listMail .mailFrame .section3 {
+  position: relative;
+}
+
+.MailPage .listMail .mailFrame .section3 p {
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.MailPage .listMail .mailFrame .section3 p:hover {
+  color: red;
+}
+
+.MailPage .listMail .mailFrame .section3 .deleteFrame {
+  background-color: rgb(160, 111, 111);
+  color: white;
+  position: absolute;
+  width: 420%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -120%;
+  right: -30%;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+.MailPage .listMail .mailFrame .section3 .deleteFrame .title {
+  font-weight: 600;
+}
+
+.mailFrame .section3 .deleteFrame .actionFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  transition: 0.5s;
+}
+
+.mailFrame .section3 .deleteFrame .actionFrame .accept:hover {
+  color: rgb(84, 84, 233);
+}
+
+.mailFrame .section3 .deleteFrame .actionFrame .reject:hover {
+  color: rgb(233, 84, 84);
+}
+
+/* reasonFrame */
+.MailPage .reasonFrame {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #00000030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.MailPage .reasonFrame .modal {
+  min-height: 35vh;
+  min-width: 30vw;
+  background-color: white;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.MailPage .reasonFrame .modal .ReasonModalheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.MailPage .reasonFrame .modal .ReasonModalheader .closeModal {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.MailPage .reasonFrame .modal .ReasonModalcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.MailPage .reasonFrame .modal .ReasonModalcontent .title {
+  color: rgb(250, 102, 102);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.MailPage .reasonFrame .modal .ReasonModalcontent textarea {
+  resize: none;
+  width: 100%;
+  height: 20vh;
+  padding: 2%;
+}
+.noneMail {
+  margin-top: 60px;
+  text-align: center;
+}
+.MailPage.noneMail p {
+  padding: 0px 30px;
+  font-size: 20px;
+}
+.MailPage .noneMail img {
+  width: 260px;
+  height: 260px;
+}
+
+.MailPage .pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+  gap: 10px;
+}
+
+.MailPage .pagination button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  padding: 5px;
+}

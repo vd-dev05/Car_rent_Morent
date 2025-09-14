@@ -1,0 +1,59 @@
+.adminPage {
+    display: flex;
+    min-height: 100vh;
+}
+
+.adminPage > .left {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    background-color: #333333;
+}
+
+.adminPage .left .component {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid #444444;
+}
+
+.adminPage .left .component:hover {
+    background-color: #3563E980;
+}
+
+.adminPage .left .activeComponent {
+    background-color: #3563E9;
+}
+
+.adminPage .left .div {
+    display: none;
+}
+
+.adminPage .left .activeDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #555555;
+}
+
+.adminPage .left .activeDiv .subComponent {
+    font-size: 12px;
+    color: #888888;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.adminPage .left .activeDiv .subComponent:hover {
+    color: #3563E9;
+}
+
+.adminPage .left .activeDiv .activeSubComponent {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.adminPage > .right {
+    flex: 1;
+}

@@ -1,0 +1,119 @@
+div.CarFrameComponent2 {
+  /* min-width: 350px; */
+  /* max-width: 400px; */
+  margin-top: 30px;
+  width: 31.8%;
+  border: 1px solid #DDDDDD;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.CarFrameComponent2 div.carImg {
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+
+div.CarFrameComponent2 div.carImg img {
+  width: 100%;
+  /* height: 100%; */
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+div.CarFrameComponent2 div.carImg img:hover {
+  opacity: 0.75;
+}
+
+div.CarFrameComponent2 div.carInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+div.CarFrameComponent2 div.carInfo div.state {
+  color: #3563E9;
+  border: 1px solid #3563E9;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.CarFrameComponent2 div.carInfo div.nameCar {
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+div.CarFrameComponent2 div.carInfo div.Price {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+div.CarFrameComponent2 div.carInfo div.Price span {
+  color: #DB2719;
+  font-size: 18px;
+}
+
+div.CarFrameComponent2 div.carInfo div.BrandAndCountry {
+  color: #DB2719;
+}
+
+div.CarFrameComponent2 div.carInfo div.BrandAndCountry span {
+  color: #3563E9;
+}
+
+div.CarFrameComponent2 div.carInfo div.parameter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+
+div.CarFrameComponent2 div.carInfo div.parameter div.parameterFrame {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* div.CarFrameComponent2 div.carInfo div.parameter .gearBox,
+div.CarFrameComponent2 div.carInfo div.parameter .sitChairs {
+  position: relative;
+  left: 55px;
+} */
+
+div.CarFrameComponent2 div.carInfo div.line {
+  border: 1px solid #DDDDDD;
+}
+
+div.CarFrameComponent2 div.carInfo div.toDetailPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+div.CarFrameComponent2 div.carInfo div.toDetailPage:hover {
+  color: #DB2719;
+}
+
+div.CarFrameComponent2 div.carInfo div.toDetailPage svg path {
+  transition: all 0.5s ease;
+}
+
+div.CarFrameComponent2 div.carInfo div.toDetailPage:hover svg path {
+  fill: #DB2719;
+}

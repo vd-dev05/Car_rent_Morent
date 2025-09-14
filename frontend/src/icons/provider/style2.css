@@ -1,0 +1,39 @@
+.EditIconBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background: rgb(194, 182, 182);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.EditIconBtn:hover {
+  background: #2bb9e4;
+}
+
+.EditIconBtn:hover .svg-icon {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

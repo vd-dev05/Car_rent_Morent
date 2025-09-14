@@ -1,0 +1,205 @@
+.header {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eeeeee;
+  z-index: 100;
+}
+
+.header .gr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  padding: 5px 200px;
+}
+
+.header .gr .gr1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header .gr .gr1 .logoWhite {
+  display: none;
+}
+
+.header .gr .gr1 img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.header .gr .gr1 img:hover {
+  opacity: 0.75;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.header .gr .gr2 {
+  flex: 1;
+  display: flex;
+  gap: 50px;
+}
+
+.header .gr .gr2 h5 {
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  /* text-wrap: nowrap; */
+}
+
+.header .gr .gr2 h5:hover {
+  border: 1px solid #3563e9;
+  color: #3563e9;
+}
+
+.header .gr .gr3_1 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header .gr .gr3_1 h5 {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.header .gr .gr3_1 h5:hover {
+  color: #3563e9;
+}
+
+.header .gr .gr3_1 .partition {
+  background-color: #000000;
+}
+
+.header .gr .gr3_2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header .gr .gr3_2 .grDropdown {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .gr .gr3_2 .grDropdown .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .gr .gr3_2 .grDropdown .info .other {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4px;
+}
+
+.header .gr .gr3_2 .grDropdown .info .other i {
+  font-size: 10px;
+  padding: 2px 2px 1px 2px;
+  border-radius: 5px;
+  background-color: #3563e980;
+}
+
+.header .gr .gr3_2 .grDropdown .info img {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header .gr .gr3_2 .grDropdown .dropdown {
+  width: fit-content;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 0px;
+  background-color: #00000080;
+}
+
+.header .gr .gr3_2 .grDropdown .dropdown .grProfile,
+.header .gr .gr3_2 .grDropdown .dropdown .grWishList,
+.header .gr .gr3_2 .grDropdown .dropdown .grLogout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.header .gr .gr3_2 .grDropdown .dropdown .grProfile .profileIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .gr .gr3_2 .grDropdown .dropdown .grWishList .wishIcon,
+.header .gr .gr3_2 .grDropdown .dropdown .grLogout .logoutIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.header .gr .gr3_2 .grDropdown:hover .info {
+  opacity: 0.75;
+}
+
+.header .gr .gr3_2 .grDropdown:hover .dropdown {
+  display: flex;
+}
+
+.header .gr .gr3_2 .grDropdown .dropdown .grProfile:hover,
+.header .gr .gr3_2 .grDropdown .dropdown .grLogout:hover,
+.header .gr .gr3_2 .grDropdown .dropdown .grWishList:hover {
+  background-color: #3563e9;
+}
+
+.header .grRedirect {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: #000000;
+  padding: 5px 15px;
+}
+
+.header .grRedirect .redirect {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 5px 0 2px;
+  border-radius: 5px;
+  background-color: #3563e980;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.header .grRedirect .redirect .logoutIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.header .grRedirect .redirect:hover {
+  background-color: #3563e9;
+}
+
+.header .grRedirect .redirectToTheWebsite {
+  display: none;
+}

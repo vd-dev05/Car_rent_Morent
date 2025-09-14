@@ -1,0 +1,15 @@
+div.PageWithCarByBrand h3 {
+  margin-bottom: 30px;
+}
+
+div.PageWithCarByBrand h3 span {
+  color: rgb(72, 72, 214);
+}
+
+div.PageWithCarByBrand div.listCar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 35px;
+  width: 1250px;
+}

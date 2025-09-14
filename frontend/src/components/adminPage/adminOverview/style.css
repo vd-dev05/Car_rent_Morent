@@ -1,0 +1,55 @@
+.adminOverview {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #F0F0F0;
+}
+
+.adminOverview .main .welcomeBanner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url('/public/imgs/adminPage/background.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.adminOverview .main .welcomeBanner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(0, -50%);
+    color: #FFFFFF;
+}
+
+.adminOverview .main .content {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+
+.adminOverview .main .content .item {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.adminOverview .main .content .item .icon {
+    width: 48px;
+    height: 48px;
+}
+
+.adminOverview .main .content .item .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+}
+
+.adminOverview .main .content .item .text p {
+    line-height: 1.5;
+}

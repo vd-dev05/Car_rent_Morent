@@ -1,0 +1,85 @@
+div.CarFrameComponent1 {
+  width: 75%;
+  height: 10%;
+  border: 1px solid rgb(194, 182, 182);
+  padding: 10px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+/* container1 */
+div.CarFrameComponent1 div.carImg {
+  height: 100%;
+  width: 50%;
+}
+
+div.CarFrameComponent1 div.carImg img {
+  width: 100%;
+  height: 100%;
+}
+
+/* carInfo */
+div.CarFrameComponent1 div.carInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  width: 100%;
+}
+
+div.CarFrameComponent1 div.carInfo div.state {
+  border: 2px solid blue;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+div.CarFrameComponent1 div.carInfo div.nameCar {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+div.CarFrameComponent1 div.carInfo div.Price span {
+  opacity: 1;
+  color: red;
+  font-weight: 600;
+}
+
+div.CarFrameComponent1 div.carInfo div.BrandAndCountry {
+  color: rgb(255, 63, 63);
+  font-size: 16px;
+}
+
+div.CarFrameComponent1 div.carInfo div.BrandAndCountry span {
+  color: blueviolet;
+}
+
+div.CarFrameComponent1 div.carInfo div.parameter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.CarFrameComponent1 div.carInfo div.parameter div.parameterFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+div.CarFrameComponent1 div.carInfo div.parameter div.parameterFrame div.title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+div.CarFrameComponent1 div.carInfo div.line {
+  border: 1px solid rgb(241, 133, 209);
+  opacity: 0.8;
+}

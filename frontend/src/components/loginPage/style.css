@@ -1,0 +1,137 @@
+.loginPage {
+    height: 765.6px;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.loginPage .background {
+    width: 100%;
+}
+
+.loginPage .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-image: fill 0 radial-gradient(#00000080, #000000BB);
+}
+
+.loginPage .overlay .content {
+    width: 500px;
+    padding: 35px 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    backdrop-filter: blur(50px);
+}
+
+.loginPage .overlay .content h1 {
+    text-align: center;
+}
+
+.loginPage .overlay .content .loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.loginPage .overlay .content .loginForm .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginPage .overlay .content .loginForm .row label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.loginPage .overlay .content .loginForm .row input {
+    height: 40px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.loginPage .overlay .content .loginForm .row input::placeholder {
+    color: #FFFFFF80;
+}
+
+.loginPage .overlay .content .loginForm .row input:focus {
+    border: 1px solid #3563E9;
+    transition: all 0.5s ease;
+}
+
+.loginPage .overlay .content .loginForm button {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #3563E9;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.loginPage .overlay .content .loginForm button:hover {
+    opacity: 1;
+}
+
+.loginPage .overlay .content .groupRedirectToRegister {
+    height: 22.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.loginPage .overlay .content .groupRedirectToRegister .redirectToRegister {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.loginPage .overlay .content .groupRedirectToRegister .redirectToRegister p {
+    font-weight: bold;
+    z-index: 1;
+}
+
+.loginPage .overlay .content .groupRedirectToRegister .redirectToRegister svg {
+    position: absolute;
+    right: 0px;
+}
+
+.loginPage .overlay .content .groupRedirectToRegister .redirectToRegister:hover {
+    width: 95px;
+    background-color: #3563E9;
+    padding: 3px 6px 3px 10px;
+}
+
+.loginPage .overlay .content .groupRedirectToRegister .redirectToRegister:hover svg {
+    position: absolute;
+    right: 4px;
+    fill: #FFFFFF;
+}

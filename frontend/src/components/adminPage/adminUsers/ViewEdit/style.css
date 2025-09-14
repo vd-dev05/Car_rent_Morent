@@ -1,0 +1,96 @@
+.ViewEdit {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    background-color: #F0F0F0;
+}
+.ViewEdit > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ViewEdit > div > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ViewEdit > div > div > div {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+
+.ViewEdit > div > div img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ViewEdit > div > div label,
+.ViewEdit > div > div h5 {
+    width: 150px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2271B1;
+    cursor: pointer;
+}
+
+.ViewEdit > div > div > input {
+    width: 500px;
+    height: 40px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #2271B1;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #2271B1;
+}
+
+.ViewEdit > div > div input:focus {
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.ViewEdit > div > div > input:disabled {
+    background-color: #FFFFFF;
+}
+
+.ViewEdit > div i {
+    font-size: 14px;
+    color: #B32D2E;
+}
+
+.ViewEdit .grButton {
+    display: flex;
+    flex-direction: row;
+}
+
+.ViewEdit .grButton button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.ViewEdit .grButton button:nth-child(1) {
+    background-color: #2271B1;
+}
+
+.ViewEdit .grButton button:nth-child(2) {
+    background-color: #B32D2E;
+}
+
+.ViewEdit .grButton button:hover {
+    opacity: 1;
+}

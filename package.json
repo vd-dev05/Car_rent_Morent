@@ -1,0 +1,22 @@
+{
+  "name": "module-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build" : "cd frontend && npm install && npm run build && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "cd backend && npm install && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vd-dev05/Car_rent_Morent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vd-dev05/Car_rent_Morent/issues"
+  },
+  "homepage": "https://github.com/vd-dev05/Car_rent_Morent#readme"
+}

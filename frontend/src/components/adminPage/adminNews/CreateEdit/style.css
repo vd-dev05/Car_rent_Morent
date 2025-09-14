@@ -1,0 +1,164 @@
+.CreateEdit label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.CreateEdit {
+    padding: 20px;
+    background-color: #F0F0F0;
+}
+
+.CreateEdit .formCreateEdit {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #EEEEEE;
+}
+
+.CreateEdit .formCreateEdit .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.CreateEdit .formCreateEdit .left .section1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #F0F0F0;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .grImg {
+    width: 301.6px;
+    height: 151.6px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .grImg > input {
+    width: 0.1px;
+    height: 0.1px;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .grImg img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .titleAndCategory {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .titleAndCategory .col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .titleAndCategory .col label {
+    cursor: pointer;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .titleAndCategory .col input {
+    height: 41.6px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 15px;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .titleAndCategory .col input:focus {
+    border: 1px solid #3563E9;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .titleAndCategory .col select {
+    width: fit-content;
+    height: 36.8px;
+    padding: 0 35px 0 15px;
+    appearance: none;
+    outline: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    background-image: url(../../../../../public/imgs/arrowDown.png);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 215px 10.4px;
+    transition: all 0.5s ease;
+}
+
+.CreateEdit .formCreateEdit .left .section1 .titleAndCategory .col select:focus  {
+    border: 1px solid #3563E9;
+}
+
+.CreateEdit .formCreateEdit .left .section2 {
+    background-color: #FFFFFF;
+}
+
+.CreateEdit .formCreateEdit .left .section2 .quill {
+    height: 709px;
+}
+
+.CreateEdit .formCreateEdit .left .section2 .ql-container {
+    height: 667.4px;
+}
+
+.CreateEdit .right {
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+}
+
+.CreateEdit .right h5 {
+    padding: 10px 20px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.CreateEdit .right .grButton {
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.CreateEdit .right .grButton button:nth-child(1) {
+    color: #FFFFFF;
+    background-color: #3563E9;
+    border: 1px solid #3563E9;
+}
+.CreateEdit .right .grButton button:nth-child(2) {
+    color: #3563E9;
+    background-color: #EEEEEE;
+    border: 1px solid #3563E9;
+}
+
+.CreateEdit .right .grButton button {
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.CreateEdit .right .grButton button:hover {
+    opacity: 1;
+}

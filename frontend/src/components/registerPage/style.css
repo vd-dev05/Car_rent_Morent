@@ -1,0 +1,137 @@
+.registerPage {
+    height: 765.6px;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.registerPage .background {
+    width: 100%;
+}
+
+.registerPage .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-image: fill 0 radial-gradient(#00000080, #000000BB);
+}
+
+.registerPage .overlay .content {
+    width: 500px;
+    padding: 35px 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    backdrop-filter: blur(50px);
+}
+
+.registerPage .overlay .content h1 {
+    text-align: center;
+}
+
+.registerPage .overlay .content .registerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.registerPage .overlay .content .registerForm .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerPage .overlay .content .registerForm .row label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.registerPage .overlay .content .registerForm .row input {
+    height: 40px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.registerPage .overlay .content .registerForm .row input::placeholder {
+    color: #FFFFFF80;
+}
+
+.registerPage .overlay .content .registerForm .row input:focus {
+    border: 1px solid #3563E9;
+    transition: all 0.5s ease;
+}
+
+.registerPage .overlay .content .registerForm button {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #3563E9;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.registerPage .overlay .content .registerForm button:hover {
+    opacity: 1;
+}
+
+.registerPage .overlay .content .groupRedirectToLogin {
+    height: 22.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.registerPage .overlay .content .groupRedirectToLogin .redirectToLogin {
+    width: 73px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.registerPage .overlay .content .groupRedirectToLogin .redirectToLogin p {
+    font-weight: bold;
+    z-index: 1;
+}
+
+.registerPage .overlay .content .groupRedirectToLogin .redirectToLogin svg {
+    position: absolute;
+    right: 0px;
+}
+
+.registerPage .overlay .content .groupRedirectToLogin .redirectToLogin:hover {
+    width: 113px;
+    background-color: #3563E9;
+    padding: 3px 6px 3px 10px;
+}
+
+.registerPage .overlay .content .groupRedirectToLogin .redirectToLogin:hover svg {
+    position: absolute;
+    right: 4px;
+    fill: #FFFFFF;
+}

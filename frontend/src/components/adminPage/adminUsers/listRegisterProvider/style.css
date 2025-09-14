@@ -1,0 +1,129 @@
+.listApplys {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #F0F0F0;
+}
+
+.listApplys .displayTable {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listApplys .displayTable .table {
+    border: 1px solid #00000040;
+    border-bottom: none;
+}
+
+.listApplys .displayTable .table .thead {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #00000040;
+    background-color: #FFFFFF;
+}
+.listApplys .displayTable .table .thead .theadInfo { grid-area: 1 / 1 / 2 / 5; padding-left: 20px; }
+.listApplys .displayTable .table .thead .theadTime { grid-area: 1 / 5 / 2 / 6; padding-left: 20px; }
+.listApplys .displayTable .table .thead .theadAction { grid-area: 1 / 6 / 2 / 7; padding-left: 20px; }
+
+.listApplys .displayTable .table .tbody .tr {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #00000040;
+    background-color: #FFFFFF;
+}
+.listApplys .displayTable .table .tbody .tr .info { grid-area: 1 / 1 / 2 / 5; padding-left: 20px; height: fit-content; display: flex; align-items: center; gap: 30px; }
+.listApplys .displayTable .table .tbody .tr .time { grid-area: 1 / 5 / 2 / 6; padding-left: 20px; display: flex; flex-direction: column; gap: 5px; }
+.listApplys .displayTable .table .tbody .tr .action { grid-area: 1 / 6 / 2 / 7; padding-left: 20px; display: flex; flex-direction: column; gap: 5px; }
+
+.listApplys .displayTable .table .tbody .tr .info .img{
+    width: 50px;
+    height: 50px;
+}
+
+.listApplys .displayTable .table .tbody .tr .info .img img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.listApplys .displayTable .table .tbody .tr .info .otherInfo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.listApplys .displayTable .table .tbody .tr .info .otherInfo .row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.listApplys .displayTable .table .tbody .tr .info .otherInfo .row i {
+    font-size: 12px;
+}
+
+.listApplys .displayTable .table .tbody .tr .action p {
+    width: fit-content;
+    cursor: pointer;
+}
+.listApplys .displayTable .table .tbody .tr .action p:hover {
+    text-decoration: underline;
+    opacity: 0.75;
+}
+.listApplys .displayTable .table .tbody .tr .action p:disabled {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.listApplys .displayTable .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.listApplys .displayTable .pagination select {
+    width: fit-content;
+    height: 24px;
+    margin-right: 10px;
+    outline: none;
+    border: 1px solid #00000040;
+}
+
+.listApplys .displayTable .pagination button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #2271B1;
+    cursor: pointer;
+}
+
+.listApplys .displayTable .pagination button svg path {
+    stroke: #2271B1;
+}
+
+.listApplys .displayTable .pagination button:disabled {
+    border: 1px solid #00000010;
+}
+
+.listApplys .displayTable .pagination button:disabled svg path {
+    stroke: #00000010;
+}

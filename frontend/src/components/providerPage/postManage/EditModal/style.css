@@ -1,0 +1,141 @@
+.EditPostProviderModal {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #00000030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.EditPostProviderModal .modal {
+  width: 50vw;
+  min-height: 95vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.EditPostProviderModal .modal .EditPostProviderheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.EditPostProviderModal .modal .EditPostProviderheader .nameCar div {
+  font-weight: 14px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.EditPostProviderModal .modal .EditPostProviderheader .closeModal {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+
+.EditPostProviderModal .modal .EditPostProviderheader .closeModal:hover {
+  background-color: rgb(255, 69, 69);
+  color: white;
+  border: 1px solid rgb(255, 69, 69);
+}
+
+.EditPostProviderModal .modal .editInfoForm {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.EditPostProviderModal .modal .editInfoForm .section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.EditPostProviderModal .modal .editInfoForm .sq {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-top: 1%;
+}
+
+.EditPostProviderModal .modal .editInfoForm .sq label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.EditPostProviderModal .modal .editInfoForm .sq input {
+  height: 30px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #00000080;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: transparent;
+}
+
+.EditPostProviderModal .modal .editInfoForm .sq select {
+  height: 30px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #00000080;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: transparent;
+}
+
+.EditPostProviderModal .modal .editInfoForm .describe {
+  width: 100%;
+  height: 30%;
+}
+
+.EditPostProviderModal .modal .editInfoForm .describe textarea {
+  height: 70%;
+  resize: none;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #00000080;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: transparent;
+}
+
+.EditPostProviderModal .modal .editInfoForm .sq input:focus,
+.EditPostProviderModal .modal .editInfoForm .sq textarea:focus {
+  border: 1px solid #3563e9;
+  transition: all 0.5s ease;
+  background-color: #00000020;
+}
+
+.EditPostProviderModal .modal .editInfoForm button {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3563e9;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.EditPostProviderModal .modal .editInfoForm button:hover {
+  opacity: 1;
+}
+
+.EditPostProviderModal .modal .editInfoForm .line {
+  border: 1px solid #00000030;
+}

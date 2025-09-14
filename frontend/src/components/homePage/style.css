@@ -1,0 +1,192 @@
+.homePage .section1 {
+  position: relative;
+  height: 765.6px;
+}
+
+.homePage .section1 img {
+  width: 100%;
+}
+
+.homePage .section1 .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-image: fill 0 radial-gradient(#00000080, #000000bb);
+}
+
+.homePage .section1 .content .redirectToCategory {
+  width: 456.5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 20px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  backdrop-filter: blur(50px);
+}
+
+.homePage .section1 .content .redirectToCategory h3 {
+  z-index: 1;
+  color: #ffffff;
+  text-wrap: nowrap;
+}
+
+.homePage .section1 .content .redirectToCategory svg {
+  position: absolute;
+  right: 12px;
+}
+
+.homePage .section1 .content .redirectToCategory:hover {
+  width: 500px;
+  background-color: #3563e980;
+}
+
+.homePage .section1 .content .redirectToCategory:hover svg {
+  fill: #ffffff;
+}
+
+.homePage .section2 {
+  text-align: center;
+  margin: 100px 200px;
+}
+
+.homePage .section2 > p {
+  margin-top: 10px;
+}
+
+.homePage .section2 .aboutUs {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homePage .section2 .aboutUs .item {
+  width: 215px;
+  padding: 20px;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.homePage .section2 .aboutUs .item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.homePage .section2 .aboutUs .item div p {
+  padding-top: 10px;
+  border-top: 1px solid #00000080;
+}
+
+.homePage .section3 {
+  padding: 100px 200px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.homePage .section3 > p {
+  margin-top: 10px;
+}
+
+.homePage .section3 .ourServices {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.homePage .section3 .ourServices .item {
+  width: 270px;
+  padding: 20px;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.homePage .section3 .ourServices .item > div {
+  width: 48px;
+  height: 48px;
+}
+
+.homePage .section3 .ourServices .item .contactPartnerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePage .section3 .ourServices .item .contactPartnerIcon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.homePage .section4 {
+  padding: 100px 200px;
+  text-align: center;
+}
+
+.homePage .section4 > p {
+  margin-top: 10px;
+}
+
+.homePage .section4 .howItWorks {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.homePage .section4 .howItWorks .left {
+  width: 500px;
+}
+
+.homePage .section4 .howItWorks .left img {
+  width: 100%;
+}
+
+.homePage .section4 .howItWorks .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.homePage .section4 .howItWorks .right > div h3 {
+  margin-bottom: 5px;
+}
+
+.homePage .section4 .howItWorks .right > div .item {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+  margin-top: 7px;
+}
+
+.homePage .section4 .howItWorks .right > div i {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.homePage .section4 h4 {
+  text-wrap: nowrap;
+}
+
+.homePage .section4 .item p {
+  text-wrap: nowrap;
+}

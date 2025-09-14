@@ -1,0 +1,41 @@
+.newsPage .groupNav {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 50px 200px;
+    background-color: #F7F7F7;
+}
+
+.newsPage .groupNav .link {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.newsPage .groupNav .link:hover {
+    color: #3563E9;
+}
+
+.newsPage .groupNav .menu {
+    display: flex;
+    gap: 40px;
+}
+
+.newsPage .groupNav .menu .link {
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E9EAF0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.newsPage .groupNav .menu .link:hover {
+    color: #3563E9;
+    border-bottom: 1px solid #3563E9;
+}
+
+.newsPage .groupNav .menu .activeLink {
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #3563E9;
+    color: #3563E9;
+}

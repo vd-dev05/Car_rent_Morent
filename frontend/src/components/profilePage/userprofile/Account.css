@@ -1,0 +1,119 @@
+.account .form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 0 40px 0;
+}
+.account .form .avatar {
+  display: flex;
+  justify-content: center;
+}
+.account .form .avatar img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
+.account .form .otherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.account .form .otherInfo > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.account .form .otherInfo > div h4 {
+  width: 120px;
+}
+
+.account .form .otherInfo > div input {
+  width: 350px;
+  height: 40px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #2271b1;
+  border-radius: 5px;
+  padding: 0 10px;
+  color: #2271b1;
+}
+
+/* ////////////////////////////////////////// */
+
+.account .form .pro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.account .form .pro button {
+  all: unset;
+  width: 280px;
+  height: 50px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.account .form .pro button::after,
+.account .form .pro button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.account .form .pro button::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.account .form .pro button::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.account .form .pro button:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.account .form .pro button:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.account .form .provider button:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}

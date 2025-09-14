@@ -1,0 +1,81 @@
+.PostProviderManage {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding: 0 8%;
+}
+
+.PostProviderManage .item {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 5%;
+  padding-right: 3%;
+  position: relative;
+}
+
+.PostProviderManage .item .actionFrame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2%;
+  border: 1px solid rgb(194, 182, 182);
+  height: 30%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* DeletePostProviderModal */
+.PostProviderManage .item .DeletePostProviderModal {
+  position: absolute;
+  right: -2.5%;
+  top: 60%;
+  width: 25%;
+  height: 40%;
+  padding: 0.2%;
+  color: white;
+  background-color: rgb(83, 77, 77);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.PostProviderManage .item .DeletePostProviderModal .title {
+  border-bottom: 1px solid white;
+}
+
+.PostProviderManage .item .DeletePostProviderModal .deleteActionFrame {
+  display: flex;
+  flex-direction: row;
+  gap: 8%;
+}
+
+.PostProviderManage
+  .item
+  .DeletePostProviderModal
+  .deleteActionFrame
+  .acceptBtn:hover {
+  color: rgb(231, 59, 59);
+}
+
+.PostProviderManage
+  .item
+  .DeletePostProviderModal
+  .deleteActionFrame
+  .rejectBtn:hover {
+  color: rgb(74, 74, 230);
+}
+.nonePost{
+  text-align: center;
+}
+.nonePost p {
+  font-size: 30px;
+}
+.nonePost img{
+  width: 700px;
+  height: 300px;
+}

@@ -1,0 +1,41 @@
+.heading {
+  display: flex;
+}
+.bannerimg {
+  width: 100%;
+  height: 350px;
+}
+.bannerheading {
+  position: absolute;
+  color: white;
+  margin-top: 8%;
+  margin-left: 35%;
+}
+.bannerheading h1 {
+  font-size: 80px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.profilein {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  gap: 20px;
+
+}
+.profile .profilein .left {
+  width: 20%;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  min-height: 80vh;
+}
+.profile .profilein .right {
+  width: 60%;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  /* min-height: 90vh; */
+}
